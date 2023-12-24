@@ -9,11 +9,11 @@ pipeline {
         stage("Deploy to EKS") {
             steps {
                 script {
-                    dir('part2-cluster-from-terraform-and-jenkins/kubernetes') {
+                    //dir('part2-cluster-from-terraform-and-jenkins/kubernetes') {
                         sh "aws eks update-kubeconfig --name myjenkins-server-eks-cluster --region us-east-1"
                         sh "kubectl apply -f k8s_ecr"
                         
-                    }
+                  //  }
                 }
             }
         }
