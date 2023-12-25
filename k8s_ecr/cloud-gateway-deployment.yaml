@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: cloud-gateway-app
-        image: cloudgateway
+        image: 582345415283.dkr.ecr.us-east-1.amazonaws.com/cloudgateway
         imagePullPolicy: Always
         ports:
         - containerPort: 9090
